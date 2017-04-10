@@ -49,7 +49,7 @@ module.exports = (context, req, res) => {
 
 function getTrackForDate(date) {
     const options = {
-      url: 'http://www.billboard.com/fe-ajax/birthdayin/379/weekly/' + date,
+      url: `http://www.billboard.com/fe-ajax/birthdayin/379/weekly/${date}`,
       json: true
     };
     return request(options).then(result => {
